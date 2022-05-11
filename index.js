@@ -11,7 +11,7 @@ async function test() {
     })
 
     const page = await browser.newPage();
-    await page.goto("https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1");
+    await page.goto("https://meet.jit.si/example1#config.prejoinPageEnabled=false");
     const stream = await getStream(page, { audio: true, video: true });
     console.log("recording");
 
@@ -31,7 +31,7 @@ async function test2() {
     })
 
     const page = await browser.newPage();
-    await page.goto("https://www.youtube.com/embed/zpmtdQiFaIo?autoplay=1");
+    await page.goto("https://meet.jit.si/example2#config.prejoinPageEnabled=false");
     const stream = await getStream(page, { audio: true, video: true });
     console.log("recording");
 
